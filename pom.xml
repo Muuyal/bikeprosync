@@ -16,6 +16,7 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <junit.platform.version>1.0.1</junit.platform.version>
         <junit.jupiter.version>5.0.1</junit.jupiter.version>
+        <java.version>1.8</java.version>
     </properties>
 
     <dependencies>
@@ -32,6 +33,10 @@
             <groupId>org.json</groupId>
             <artifactId>json</artifactId>
             <version>20180130</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
         </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
