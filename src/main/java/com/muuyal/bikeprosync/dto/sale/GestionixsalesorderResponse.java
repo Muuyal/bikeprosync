@@ -1,6 +1,6 @@
 package com.muuyal.bikeprosync.dto.sale;
 
-public class GestionixsalesorderRespond {
+public class GestionixsalesorderResponse {
 
     private Integer branch_id;
     private String date;
