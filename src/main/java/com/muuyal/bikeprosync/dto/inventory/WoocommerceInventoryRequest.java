@@ -1,4 +1,4 @@
-package com.muuyal.dto.inventory;
+package com.muuyal.bikeprosync.dto.inventory;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 

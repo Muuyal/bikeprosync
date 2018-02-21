@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76fc9c5a-7503-49f5-ab77-192cf05ea920" name="Default" comment="">
+<<<<<<< Updated upstream
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/muuyal/bikeprosync/dto/inventory/GestionixinventoryResponse.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/muuyal/bikeprosync/dto/inventory/GestionixinventoryRequest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/muuyal/bikeprosync/dto/sale/GestionixsalesorderRespond.java" afterPath="$PROJECT_DIR$/src/main/java/com/muuyal/bikeprosync/dto/sale/GestionixsalesorderResponse.java" />
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+>>>>>>> Stashed changes
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -696,6 +700,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="63" lean-forward="false" selection-start-line="18" selection-start-column="63" selection-end-line="18" selection-end-column="63" />
+<<<<<<< Updated upstream
+=======
           <folding />
         </state>
       </provider>
@@ -715,10 +721,33 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+>>>>>>> Stashed changes
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/muuyal/bikeprosync/controller/HelloWorldController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/muuyal/bikeprosync/dto/inventory/WoocommerceIntentoryRequest.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/muuyal/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+=======
+>>>>>>> Stashed changes
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="488">
@@ -778,6 +807,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="41" lean-forward="false" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+<<<<<<< Updated upstream
           <folding />
         </state>
       </provider>
@@ -909,6 +939,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="41" lean-forward="false" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+=======
+>>>>>>> Stashed changes
           <folding />
         </state>
       </provider>
