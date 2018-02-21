@@ -3,5 +3,5 @@ package com.muuyal.dto.inventory;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class WoocommerceIntentoryRequest {
+public class WoocommerceInventoryRequest {
 }
