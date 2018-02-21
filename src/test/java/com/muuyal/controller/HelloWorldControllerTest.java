@@ -1,4 +1,4 @@
-package com.aws.codestar.projecttemplates.controller;
+package com.muuyal.controller;
 
 import org.json.JSONObject;
 import org.junit.jupiter.api.AfterAll;

@@ -1,4 +1,4 @@
-package com.aws.codestar.projecttemplates;
+package com.muuyal;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

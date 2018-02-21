@@ -1,4 +1,4 @@
-package com.aws.codestar.projecttemplates.dto.inventory;
+package com.muuyal.dto.inventory;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
