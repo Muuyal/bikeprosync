@@ -1,15 +1,14 @@
 package com.muuyal.bikeprosync.dto.sale;
 
 public class GestionixsalesorderResponse {
-
     private Integer branch_id;
     private String date;
-    private double subtotal;
-    private double total;
-    private double exchange_rate;
+    private Double subtotal;
+    private Double total;
+    private Double exchange_rate;
     private String currency;
     private boolean inventory_lock;
-    private String[]concepts = new String[2];
+    private String[] concepts = new String[2];
 
     public Integer getBranch_id() {
         return branch_id;
@@ -27,27 +26,27 @@ public class GestionixsalesorderResponse {
         this.date = date;
     }
 
-    public double getSubtotal() {
+    public Double getSubtotal() {
         return subtotal;
     }
 
-    public void setSubtotal(double subtotal) {
+    public void setSubtotal(Double subtotal) {
         this.subtotal = subtotal;
     }
 
-    public double getTotal() {
+    public Double getTotal() {
         return total;
     }
 
-    public void setTotal(double total) {
+    public void setTotal(Double total) {
         this.total = total;
     }
 
-    public double getExchange_rate() {
+    public Double getExchange_rate() {
         return exchange_rate;
     }
 
-    public void setExchange_rate(double exchange_rate) {
+    public void setExchange_rate(Double exchange_rate) {
         this.exchange_rate = exchange_rate;
     }
 
@@ -74,9 +73,6 @@ public class GestionixsalesorderResponse {
     public void setConcepts(String[] concepts) {
         this.concepts = concepts;
     }
-
-
-
 }
 
 
