@@ -1,7 +1,6 @@
 package com.muuyal.bikeprosync.dto.sale;
 
 public class GestionixsalesorderRequest {
-
     private Integer branch_id;
     private String date;
     private Double subtotal;
@@ -74,43 +73,217 @@ public class GestionixsalesorderRequest {
     public void setConcepts(String[] concepts) {
         this.concepts = concepts;
     }
-}
 
-public class RMEmitter {
-    address (RMGeneral_Address): Dirección del emisor ,
-}
+    public class RMEmitter {
+        private String commercial_name;
+        private String address;
 
-public class RMClient {
-    commercial_name (string): Nombre comercial del cliente POST/PUT: Enviar el nombre comercial del cliente GET: Contendrá el nombre comercial asignado para el cliente ,
-    address (RMGeneral_Address): Dirección del cliente ,
-}
+        public String getCommercial_name() {
+            return commercial_name;
+        }
 
-public class RMGeneral_Financial_Information {
-    method (string): Metodo por el cual se efectúa el movimiento financiero: cash (Efectivo) transference (Transferencia) credit_card (Tarjeta de credito) debit_card (Tarjeta de débito) american_express (Tarjeta American Express) check (Cheque) electronic_wallet (Monedero electrónico) electronic_money (Dinero electrónico) vouchers (Vales) service_card (Tarjeta de servicios)
-    others (Otros) not_apply (No aplica) ,
-}
+        public void setCommercial_name(String commercial_name) {
+            this.commercial_name = commercial_name;
+        }
 
-public class RMBranchOffice {
-    type (string): Tipo de sucursal ,
-    name (string): Nombre de la sucursal ,
-    description (string): Abreviación de la sucursal ,
-    address (RMGeneral_Address): The address of the emitter ,
-}
+        public String getAddress() {
+            return address;
+        }
 
-public class RMGeneral_Concept {
-    tax_withheld (number): Total de los impuestos retenidos POST/PUT: Es obligatorio enviarlo, se aceptan hasta 2 decimales, si se envían más se procederá a hacer el redondeo, si no se cuenta con ningún impuesto retenido enviar como 0 GET: Contiene el valor del impuesto trasladado asignado al concepto ,
-    total (number): Importe total del concepto, se obtiene de la siguiente manera Subtotal - Descuento + Impuestos POST/PUT: Es obligatorio enviarlo, se aceptan hasta 2 decimales, si se envían más se procederá a hacer el redondeo GET: Contiene el valor del total asignado al concepto ,
-    type (string): Tipo de concepto POST/PUT: Solamente se aceptarán los valors product o service, en caso de no enviarlo se notificará que es oglibatorio que se defina GET: Contiene el valor del tipo asignado al concepto ,
-}
+        public void setAddress(String address) {
+            this.address = address;
+        }
+    }
 
-public class RMGeneral_Tax {
-    description (string): Descripción del impuesto Retenidos: Cedular, Cinco_Al_Millar, ISN, ISR, IVA Trasladados: IEPS, ISH, IVA POST/PUT: Se validará contra esta lista, en caso de que no pase la validación se enviara una notificación GET: Contiene el valor asignado a la descripción del impuesto ,
-    total (number): El total del impuesto POST/PUT: Enviar con hasta dos decimales, en caso contrario se procederá a hacer el redondeo GET: Contiene el valor del total asignado al total del impuesto ,
-    type (string): El tipo del impuesto POST/PUT: Valores permitidos: (transferred, withheld, transferred_fixed), si no cumple con estas características se procederá a notificar GET: Contiene el valor del tipo asignado al impuesto ,
-    id (integer): Id único del impuesto POST/PUT: Es el identificador del impuesto, es importante resaltar que este valor se tomará en cuenta a la hora de hacer la validación del calculo de dependencias GET: Contiene el valor del identificador asignado al impuesto ,
-}
+    public class RMClient {
+        private String commercial_name;
+        private String address;
 
-public class RMGeneral_Discount {
-    total (number): Total del descuento POST/PUT: Se enviará el total del descuento GET: Contiene el valor asignado al total del descuento
-}
+        public String getCommercial_name() {
+            return commercial_name;
+        }
 
+        public void setCommercial_name(String commercial_name) {
+            this.commercial_name = commercial_name;
+        }
+
+        public String getAddress() {
+            return address;
+        }
+
+        public void setAddress(String address) {
+            this.address = address;
+        }
+    }
+
+    public class RMGeneral_Financial_Information {
+        private String method;
+        private String others;
+
+        public String getMethod() {
+            return method;
+        }
+
+        public void setMethod(String method) {
+            this.method = method;
+        }
+
+        public String getOthers() {
+            return others;
+        }
+
+        public void setOthers(String others) {
+            this.others = others;
+        }
+    }
+
+    public class RMBranchOffice {
+        private String type;
+        private String name;
+        private String description;
+        private String address;
+
+        public String getType() {
+            return type;
+        }
+
+        public void setType(String type) {
+            this.type = type;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public void setName(String name) {
+            this.name = name;
+        }
+
+        public String getDescription() {
+            return description;
+        }
+
+        public void setDescription(String description) {
+            this.description = description;
+        }
+
+        public String getAddress() {
+            return address;
+        }
+
+        public void setAddress(String address) {
+            this.address = address;
+        }
+    }
+
+    public class RMGeneral_Concept {
+        private Integer tax_withheld;
+        private Double total;
+        private String type;
+
+        public Integer getTax_withheld() {
+            return tax_withheld;
+        }
+
+        public void setTax_withheld(Integer tax_withheld) {
+            this.tax_withheld = tax_withheld;
+        }
+
+        public Double getTotal() {
+            return total;
+        }
+
+        public void setTotal(Double total) {
+            this.total = total;
+        }
+
+        public String getType() {
+            return type;
+        }
+
+        public void setType(String type) {
+            this.type = type;
+        }
+    }
+
+    public class RMGeneral_Tax {
+        private String description;
+        private Double total;
+        private String type;
+        private Integer id;
+
+        public String getDescription() {
+            return description;
+        }
+
+        public void setDescription(String description) {
+            this.description = description;
+        }
+
+        public Double getTotal() {
+            return total;
+        }
+
+        public void setTotal(Double total) {
+            this.total = total;
+        }
+
+        public String getType() {
+            return type;
+        }
+
+        public void setType(String type) {
+            this.type = type;
+        }
+
+        public Integer getId() {
+            return id;
+        }
+
+        public void setId(Integer id) {
+            this.id = id;
+        }
+    }
+
+    public class RMGeneral_Discount {
+        private Double total;
+
+        public Double getTotal() {
+            return total;
+        }
+
+        public void setTotal(Double total) {
+            this.total = total;
+        }
+    }
+
+    public class RMGeneral_Customs {
+        private String name;
+        private String number;
+        private String date;
+
+        public String getName() {
+            return name;
+        }
+
+        public void setName(String name) {
+            this.name = name;
+        }
+
+        public String getNumber() {
+            return number;
+        }
+
+        public void setNumber(String number) {
+            this.number = number;
+        }
+
+        public String getDate() {
+            return date;
+        }
+
+        public void setDate(String date) {
+            this.date = date;
+        }
+    }
+}
