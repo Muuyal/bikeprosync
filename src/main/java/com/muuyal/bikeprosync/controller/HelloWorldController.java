@@ -1,4 +1,4 @@
-package com.muuyal.controller;
+package com.muuyal.bikeprosync.controller;
 
 import org.json.JSONObject;
 import org.springframework.http.ResponseEntity;
